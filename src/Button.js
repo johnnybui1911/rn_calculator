@@ -37,7 +37,8 @@ const Button = ({ item, isOperator, pressNumber, pressEqual, pressClear, pressOp
   )
 }
 
-const MemoButton = React.memo(Button)
+const MemoButton = React.memo(Button) //React memo for prevent re-rendering
+
 const mapDispatchToProps = {
   pressNumber,
   pressClear,

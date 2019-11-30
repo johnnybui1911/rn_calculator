@@ -14,6 +14,7 @@ const Screen = ({ rootReducer }) => {
 
   return (
     <SafeAreaView style={styles.rootContainer}>
+      {/* Display Screen */}
       <View style={styles.displayContainer}>
         <Text style={[styles.output, { fontSize }]}>{displayValue}</Text>
       </View>
@@ -21,6 +22,7 @@ const Screen = ({ rootReducer }) => {
         <View style={styles.numberButtonConatiner}>
           {inputButtons.numbers.map((row, index) => {
             return (
+              // Numbers Buttons and "C", "." Buttons
               <View key={index} style={{ flex: 1, flexDirection: 'row' }}>
                 {row.map(item => (
                   <Button key={item} item={item} isOperator />
@@ -32,6 +34,7 @@ const Screen = ({ rootReducer }) => {
         <View style={styles.operatorButtonConatiner}>
           <View style={{ flex: 1 }}>
             {inputButtons.operators.map(item => (
+              // Operators Button  + - * /
               <Button key={item} item={item} />
             ))}
           </View>
