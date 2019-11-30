@@ -1,10 +1,4 @@
-import {
-  NUMBER_PRESS,
-  OPERATOR_PRESS,
-  EQUAL_PRESS,
-  CLEAR_PRESS,
-  DOT_PRESS
-} from './constants'
+import { NUMBER_PRESS, OPERATOR_PRESS, EQUAL_PRESS, CLEAR_PRESS, DOT_PRESS } from './constants'
 
 export const pressNumber = inputValue => {
   return { type: NUMBER_PRESS, inputValue }

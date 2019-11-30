@@ -1,7 +1,7 @@
 import React from 'react'
 import { SafeAreaView, View, Text } from 'react-native'
 import { connect } from 'react-redux'
-import { inputButtons, LARGE_FONT, formatDisplayOutput } from './constants'
+import { inputButtons, LARGE_FONT, formatDisplayOutput, MAX_SIZE_DISPLAY, FONT_THRESHOLD } from './constants'
 import styles from './styles'
 import Button from './Button'
 
@@ -9,8 +9,8 @@ const Screen = ({ rootReducer }) => {
   const { inputValue, outputValue } = rootReducer
 
   const displayValue = formatDisplayOutput(inputValue, outputValue)
-  const displayLength = displayValue.length > 9 ? 10 : displayValue.length
-  const fontSize = displayLength > 6 ? LARGE_FONT - (displayLength % 6) * 10 : LARGE_FONT
+  const displayLength = displayValue.length > MAX_SIZE_DISPLAY ? MAX_SIZE_DISPLAY + 1 : displayValue.length
+  const fontSize = displayLength > FONT_THRESHOLD ? LARGE_FONT - (displayLength % FONT_THRESHOLD) * 10 : LARGE_FONT
 
   return (
     <SafeAreaView style={styles.rootContainer}>
