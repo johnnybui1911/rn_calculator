@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1575201635347" clover="3.2.0">
-  <project timestamp="1575201635347" name="All files">
-    <metrics statements="103" coveredstatements="103" conditionals="72" coveredconditionals="66" methods="17" coveredmethods="16" elements="192" coveredelements="185" complexity="0" loc="103" ncloc="103" packages="2" files="7" classes="7"/>
+<coverage generated="1575208545026" clover="3.2.0">
+  <project timestamp="1575208545026" name="All files">
+    <metrics statements="102" coveredstatements="102" conditionals="70" coveredconditionals="65" methods="17" coveredmethods="16" elements="189" coveredelements="183" complexity="0" loc="102" ncloc="102" packages="2" files="7" classes="7"/>
     <package name="RNCalculator">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.js" path="/Users/nguyenquangminh/Desktop/RNCalculator/App.js">
@@ -11,7 +11,7 @@
       </file>
     </package>
     <package name="RNCalculator.src">
-      <metrics statements="101" coveredstatements="101" conditionals="72" coveredconditionals="66" methods="16" coveredmethods="15"/>
+      <metrics statements="100" coveredstatements="100" conditionals="70" coveredconditionals="65" methods="16" coveredmethods="15"/>
       <file name="Button.js" path="/Users/nguyenquangminh/Desktop/RNCalculator/src/Button.js">
         <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
         <line num="7" count="3" type="stmt"/>
@@ -35,14 +35,14 @@
         <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="4"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="24" count="8" type="stmt"/>
-        <line num="28" count="24" type="stmt"/>
-        <line num="38" count="10" type="stmt"/>
-        <line num="46" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="27" count="24" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
       </file>
       <file name="actions.js" path="/Users/nguyenquangminh/Desktop/RNCalculator/src/actions.js">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
@@ -58,7 +58,7 @@
         <line num="20" count="1" type="stmt"/>
       </file>
       <file name="constants.js" path="/Users/nguyenquangminh/Desktop/RNCalculator/src/constants.js">
-        <metrics statements="33" coveredstatements="33" conditionals="20" coveredconditionals="15" methods="3" coveredmethods="3"/>
+        <metrics statements="32" coveredstatements="32" conditionals="18" coveredconditionals="14" methods="3" coveredmethods="3"/>
         <line num="4" count="6" type="stmt"/>
         <line num="8" count="6" type="stmt"/>
         <line num="17" count="6" type="stmt"/>
@@ -75,23 +75,22 @@
         <line num="33" count="2" type="stmt"/>
         <line num="34" count="2" type="stmt"/>
         <line num="35" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="36" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="37" count="2" type="cond" truecount="3" falsecount="1"/>
-        <line num="38" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="40" count="6" type="stmt"/>
         <line num="41" count="6" type="stmt"/>
-        <line num="42" count="6" type="stmt"/>
-        <line num="43" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="44" count="4" type="stmt"/>
+        <line num="42" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
         <line num="46" count="2" type="stmt"/>
         <line num="47" count="2" type="stmt"/>
-        <line num="48" count="2" type="stmt"/>
-        <line num="49" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="6" type="stmt"/>
         <line num="52" count="6" type="stmt"/>
-        <line num="53" count="6" type="stmt"/>
-        <line num="54" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="53" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="54" count="6" type="cond" truecount="1" falsecount="1"/>
         <line num="55" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="56" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="57" count="6" type="stmt"/>
+        <line num="56" count="6" type="stmt"/>
       </file>
       <file name="reducer.js" path="/Users/nguyenquangminh/Desktop/RNCalculator/src/reducer.js">
         <metrics statements="32" coveredstatements="32" conditionals="40" coveredconditionals="39" methods="1" coveredmethods="1"/>

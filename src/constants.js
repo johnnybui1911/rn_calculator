@@ -26,15 +26,13 @@ export const formatString = (outputValue, threshold) =>
   format(outputValue, {
     precision: threshold,
     upperExp: threshold,
-    lowerExp: -threshold
+    lowerExp: -(threshold - 3)
   })
 
 export const formatResult = outputValue => {
   let formatOuput = ''
   formatOuput = formatString(outputValue, MAX_SIZE_DISPLAY)
   formatOuput = formatOuput.length > MAX_SIZE_DISPLAY ? formatString(parseFloat(formatOuput), FONT_THRESHOLD) : formatOuput
-  // recheck for case: 0.000*** -> the precision not fix to threhold size
-  formatOuput = formatOuput.replace(/\D/g, '').length > MAX_SIZE_DISPLAY ? formatString(parseFloat(formatOuput), FONT_THRESHOLD - 2) : formatOuput
   formatOuput = formatOuput === 'Infinity' || formatOuput === 'NaN' ? 'Error' : formatOuput
   return formatOuput
 }
