@@ -1,13 +1,12 @@
-import { combineReducers } from 'redux'
 import { NUMBER_PRESS, OPERATOR_PRESS, EQUAL_PRESS, CLEAR_PRESS, DOT_PRESS, MAX_SIZE_DISPLAY, formatResult } from './constants'
 
-const initialState = {
+export const initialState = {
   inputValue: '0',
   outputValue: '',
   selectedSymbol: null,
   hasDot: false
 }
-const rootReducer = (state = initialState, action) => {
+export const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case NUMBER_PRESS: {
       const { selectedSymbol, outputValue, hasDot } = state
@@ -15,7 +14,7 @@ const rootReducer = (state = initialState, action) => {
       const lastIdSymbol = selectedSymbol ? prevInputValue.lastIndexOf(selectedSymbol) : -1
       const lastInput = prevInputValue.slice(lastIdSymbol + 1, prevInputValue.length)
       // input out of upper bound -> no changes
-      if (lastInput.indexOf('e') < 0 && lastInput.replace(/\D/g, '').length >= MAX_SIZE_DISPLAY) {
+      if (lastInput.indexOf('e') < 0 && lastInput.replace(/\D/g, '').length >= MAX_SIZE_DISPLAY && !outputValue) {
         return state
       }
       // user press number input
@@ -82,7 +81,7 @@ const rootReducer = (state = initialState, action) => {
       if (outputValue && !selectedSymbol) {
         return {
           ...state,
-          hasDot: !state.hasDot,
+          hasDot: true,
           inputValue: '0.',
           outputValue: ''
         }
@@ -92,7 +91,7 @@ const rootReducer = (state = initialState, action) => {
         : {
             // user press "." first time
             ...state,
-            hasDot: !state.hasDot,
+            hasDot: true,
             inputValue: state.inputValue.slice(-1) === '.' ? state.inputValue : state.inputValue + '.',
             outputValue: ''
           }
@@ -107,4 +106,4 @@ const rootReducer = (state = initialState, action) => {
   }
 }
 
-export default combineReducers({ rootReducer })
+export default rootReducer

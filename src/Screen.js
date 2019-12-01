@@ -1,16 +1,15 @@
 import React from 'react'
 import { SafeAreaView, View, Text } from 'react-native'
 import { connect } from 'react-redux'
+import Button from './Button'
 import { inputButtons, LARGE_FONT, formatDisplayOutput, MAX_SIZE_DISPLAY, FONT_THRESHOLD } from './constants'
 import styles from './styles'
-import Button from './Button'
 
-const Screen = ({ rootReducer }) => {
+export const Screen = ({ rootReducer }) => {
   const { inputValue, outputValue } = rootReducer
-
   const displayValue = formatDisplayOutput(inputValue, outputValue)
-  const displayLength = displayValue.length > MAX_SIZE_DISPLAY ? MAX_SIZE_DISPLAY + 1 : displayValue.length
-  const fontSize = displayLength > FONT_THRESHOLD ? LARGE_FONT - (displayLength % FONT_THRESHOLD) * 10 : LARGE_FONT
+  const displayLength = displayValue.length > MAX_SIZE_DISPLAY ? MAX_SIZE_DISPLAY + 1 : displayValue.length // check length of display value
+  const fontSize = displayLength > FONT_THRESHOLD ? LARGE_FONT - (displayLength % FONT_THRESHOLD) * 10 : LARGE_FONT // decrease fontSize when length > threshold
 
   return (
     <SafeAreaView style={styles.rootContainer}>
@@ -25,7 +24,7 @@ const Screen = ({ rootReducer }) => {
               // Numbers Buttons and "C", "." Buttons
               <View key={index} style={{ flex: 1, flexDirection: 'row' }}>
                 {row.map(item => (
-                  <Button key={item} item={item} isOperator />
+                  <Button key={item} item={item} />
                 ))}
               </View>
             )
@@ -35,7 +34,7 @@ const Screen = ({ rootReducer }) => {
           <View style={{ flex: 1 }}>
             {inputButtons.operators.map(item => (
               // Operators Button  + - * /
-              <Button key={item} item={item} />
+              <Button key={item} item={item} isOperator />
             ))}
           </View>
         </View>
@@ -44,6 +43,6 @@ const Screen = ({ rootReducer }) => {
   )
 }
 const mapStateToProps = state => ({
-  rootReducer: state.rootReducer
+  rootReducer: state
 })
 export default connect(mapStateToProps)(Screen)

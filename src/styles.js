@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native'
-import { palletes } from './constants'
+import { pallete } from './constants'
 
 export default StyleSheet.create({
-  rootContainer: { flex: 1, backgroundColor: palletes.WHITE },
+  rootContainer: { flex: 1, backgroundColor: pallete.WHITE },
   displayContainer: {
     flex: 1,
     justifyContent: 'flex-end',
@@ -16,7 +16,7 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: palletes.BUTTON_COLOR,
+    backgroundColor: pallete.BUTTON_COLOR,
     margin: 6,
     borderRadius: 6
   },

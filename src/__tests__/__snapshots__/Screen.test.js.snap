@@ -1,0 +1,373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen Rendering should match to snapshot with mock state: Small Font Snapshot 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "flex": 1,
+        "justifyContent": "flex-end",
+        "padding": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 88,
+          },
+          Object {
+            "fontSize": 48,
+          },
+        ]
+      }
+    >
+      999,999,999
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 3,
+          "paddingLeft": 6,
+          "paddingVertical": 6,
+        }
+      }
+    >
+      <View
+        key="0"
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Connect(Component)
+          item={7}
+          key="7"
+        />
+        <Connect(Component)
+          item={8}
+          key="8"
+        />
+        <Connect(Component)
+          item={9}
+          key="9"
+        />
+      </View>
+      <View
+        key="1"
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Connect(Component)
+          item={4}
+          key="4"
+        />
+        <Connect(Component)
+          item={5}
+          key="5"
+        />
+        <Connect(Component)
+          item={6}
+          key="6"
+        />
+      </View>
+      <View
+        key="2"
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Connect(Component)
+          item={1}
+          key="1"
+        />
+        <Connect(Component)
+          item={2}
+          key="2"
+        />
+        <Connect(Component)
+          item={3}
+          key="3"
+        />
+      </View>
+      <View
+        key="3"
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Connect(Component)
+          item="C"
+          key="C"
+        />
+        <Connect(Component)
+          item={0}
+          key="0"
+        />
+        <Connect(Component)
+          item="."
+          key="."
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "padding": 6,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Connect(Component)
+          isOperator={true}
+          item="/"
+          key="/"
+        />
+        <Connect(Component)
+          isOperator={true}
+          item="*"
+          key="*"
+        />
+        <Connect(Component)
+          isOperator={true}
+          item="+"
+          key="+"
+        />
+        <Connect(Component)
+          isOperator={true}
+          item="-"
+          key="-"
+        />
+        <Connect(Component)
+          isOperator={true}
+          item="="
+          key="="
+        />
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`Screen Rendering should match to snapshot: Default Font Snapshot 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "flex": 1,
+        "justifyContent": "flex-end",
+        "padding": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontSize": 88,
+          },
+          Object {
+            "fontSize": 48,
+          },
+        ]
+      }
+    >
+      999,999,999
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 3,
+          "paddingLeft": 6,
+          "paddingVertical": 6,
+        }
+      }
+    >
+      <View
+        key="0"
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Connect(Component)
+          item={7}
+          key="7"
+        />
+        <Connect(Component)
+          item={8}
+          key="8"
+        />
+        <Connect(Component)
+          item={9}
+          key="9"
+        />
+      </View>
+      <View
+        key="1"
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Connect(Component)
+          item={4}
+          key="4"
+        />
+        <Connect(Component)
+          item={5}
+          key="5"
+        />
+        <Connect(Component)
+          item={6}
+          key="6"
+        />
+      </View>
+      <View
+        key="2"
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Connect(Component)
+          item={1}
+          key="1"
+        />
+        <Connect(Component)
+          item={2}
+          key="2"
+        />
+        <Connect(Component)
+          item={3}
+          key="3"
+        />
+      </View>
+      <View
+        key="3"
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Connect(Component)
+          item="C"
+          key="C"
+        />
+        <Connect(Component)
+          item={0}
+          key="0"
+        />
+        <Connect(Component)
+          item="."
+          key="."
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "padding": 6,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Connect(Component)
+          isOperator={true}
+          item="/"
+          key="/"
+        />
+        <Connect(Component)
+          isOperator={true}
+          item="*"
+          key="*"
+        />
+        <Connect(Component)
+          isOperator={true}
+          item="+"
+          key="+"
+        />
+        <Connect(Component)
+          isOperator={true}
+          item="-"
+          key="-"
+        />
+        <Connect(Component)
+          isOperator={true}
+          item="="
+          key="="
+        />
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;

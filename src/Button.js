@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { pressNumber, pressClear, pressEqual, pressOperator, pressDot } from './actions'
 import styles from './styles'
 
-const Button = ({ item, isOperator, pressNumber, pressEqual, pressClear, pressOperator, pressDot }) => {
+export const Button = ({ item, isOperator, pressNumber, pressEqual, pressClear, pressOperator, pressDot }) => {
   const handlePress = () => {
     if (typeof item === 'number') {
       pressNumber(item)
@@ -23,7 +23,7 @@ const Button = ({ item, isOperator, pressNumber, pressEqual, pressClear, pressOp
           break
         }
         default: {
-          pressOperator(item)
+          pressOperator(item) // user press "+,-,*,/"
           break
         }
       }
@@ -31,7 +31,7 @@ const Button = ({ item, isOperator, pressNumber, pressEqual, pressClear, pressOp
   }
 
   return (
-    <TouchableOpacity key={item} style={[styles.button, { marginLeft: isOperator ? 6 : 0 }]} onPress={handlePress}>
+    <TouchableOpacity key={item} style={[styles.button, { marginLeft: isOperator ? 0 : 6 }]} onPress={handlePress}>
       <Text style={styles.input}>{item}</Text>
     </TouchableOpacity>
   )
